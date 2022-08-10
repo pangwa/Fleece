@@ -25,6 +25,10 @@ module JsonValue =
 type JsonValue = System.Text.Json.JsonElement
 #endif
 
+#if YAMLDOTNET
+namespace Fleece.YamlDotNet
+#endif
+
 open Fleece
 open Internals
 open FSharpPlus
